@@ -1,5 +1,5 @@
 import http from "./httpService";
-const url = "http://localhost:1337";
+const url = "https://dark-plum-sea-urchin-coat.cyclic.cloud/";
 
 export function getInterviewer(email) {
   return http.post(`${url}/interviewer/getOne`, email);
