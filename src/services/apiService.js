@@ -1,5 +1,5 @@
 import http from "./httpService";
-const url = "https://dark-plum-sea-urchin-coat.cyclic.cloud/";
+const url = "https://amused-pleat-goat.cyclic.app";
 
 export function getInterviewer(email) {
   return http.post(`${url}/interviewer/getOne`, email);
@@ -38,4 +38,8 @@ export function smarty(obj) {
 
 export function blockTime(obj) {
   return http.post(`${url}/interviewer/makeSlotBusy`, obj);
+}
+
+export function register(obj) {
+  return http.post(`${url}/interviewer/create`, obj);
 }
