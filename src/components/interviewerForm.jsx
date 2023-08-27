@@ -21,9 +21,10 @@ export default function InterviewerForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(data);
     try {
       await register(data);
+      console.log('done');
     } catch (ex) {}
   };
 
