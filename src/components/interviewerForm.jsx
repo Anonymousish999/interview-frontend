@@ -1,5 +1,6 @@
 import React, { Component, useRef, useState } from "react";
 import { register } from "../services/apiService";
+import { redirect } from "react-router-dom";
 
 export default function InterviewerForm() {
   const nameRef = useRef("");
@@ -25,7 +26,11 @@ export default function InterviewerForm() {
     try {
       await register(data);
       console.log('done');
-    } catch (ex) {}
+
+      redirect("/?login=true");
+    } catch (ex) {
+      alert("Something went wrong");
+    }
   };
 
   return (

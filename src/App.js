@@ -16,7 +16,7 @@ function App() {
           <Route path="/interviewerHome" element={<InterviewerHome />} />
           <Route path="/adminHome" element={<AdminHome />} />
           <Route path="/" element={<Home />} />
-          <Route path="/register" element={<InterviewerForm />} />
+          {/* <Route path="/register" element={<InterviewerForm />} /> */}
         </Routes>
       </UserProvider>
     </>
